@@ -7,7 +7,7 @@ vars_t *element;
  * @argc: Number of arguments
  * @argv: Arguments names
  * Return: 0 on success, exit on failures
- *           */
+ */
 int main(int argc, char **argv)
 {
 	size_t n = 0;
