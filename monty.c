@@ -3,11 +3,11 @@
 vars_t *element;
 
 /**
- * main - Entry Point
- * @argc: Number of arguments
- * @argv: Arguments names
- * Return: 0 on success, exit on failures
- */
+  * main - Entry Point
+  * @argc: Number of arguments
+  * @argv: Arguments names
+  * Return: 0 on success, exit on failures
+  */
 int main(int argc, char **argv)
 {
 	size_t n = 0;
@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 		exit_function(1);
 
 	for (; getline(&(element->buf), &n, element->fp) != EOF;
-			element->line_number++)
+		element->line_number++)
 	{
 		element->tokened = malloc(sizeof(char *) * 2);
 		if (element->tokened == NULL)
